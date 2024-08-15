@@ -1,10 +1,12 @@
 title: No Limit Minecarts
 author:
-  name: nosqd
+  name: nullsqd
   email: nosqdgg@gmail.com
 description: >
   24w33a Fabric Mod that removes limits for gamerule maxMinecartSpeed
-theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
-  
+  social_links:
+    - { platform: telegram, user_url: "https://t.me/nulllinks" }
+    - { platform: github, user_url: "https://github.com/nosqd" }
