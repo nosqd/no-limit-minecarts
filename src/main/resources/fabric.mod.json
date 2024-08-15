@@ -1,30 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "fmamod",
+	"id": "no-limit-minecarts",
 	"version": "${version}",
-	"name": "FUCK MY ASS MOD",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "No Limit Minecarts",
+	"description": "24w33a Fabric Mod that removes limits for gamerule `maxMinecartSpeed`",
 	"authors": [
-		"Me!"
+		"nosqd",
+		"bethetka.ru"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nlm.nosqd.ru/",
+		"sources": "https://github.com/nosqd/no-limit-minecarts",
+		"email": "nosqdgg@gmail.com"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/fmamod/icon.png",
-	"environment": "server",
+	"icon": "assets/nlm/nlm-icon-64.png",
+	"environment": "*",
 	"entrypoints": {
-		"server": [
-			"ru.nosqd.fma.FuckMyAssMod"
+		"main": [
+			"ru.nosqd.nlm.NoLimitMinecartsMod"
 		]
 	},
 	"mixins": [
-		"fmamod.mixins.json"
+		"nlm.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "*",
+		"minecraft": "~1.21-alpha.24.33.a",
 		"java": ">=21"
 	}
 }
