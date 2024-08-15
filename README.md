@@ -9,7 +9,7 @@
 ## Downloads
 > Download from [github releases](https://github.com/nosqd/no-limit-minecarts/releases)
 > 
-> Download from [telegram channel](https://t.me/nosqdfiles/3)
+> Download from [telegram channel](https://t.me/nosqdfiles/4)
 
 ## Why minecarts is slow when speed is max?
 > I've noticed that speed of minecart kinda limited when there are no passengers.
