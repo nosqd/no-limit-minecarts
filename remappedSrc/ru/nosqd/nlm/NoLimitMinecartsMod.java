@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 // TODO: add notification when you join world without minecart feature flag like "this world can't be boosted by no limit minecarts"
 
 public class NoLimitMinecartsMod implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("no-limit-minecarts");
+    public static final Logger LOGGER = LoggerFactory.getLogger("no-limit-minecarts");
 
 	@Override
 	public void onInitialize() {
