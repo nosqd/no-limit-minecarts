@@ -19,10 +19,17 @@
 	"entrypoints": {
 		"main": [
 			"ru.nosqd.nlm.NoLimitMinecartsMod"
+		],
+		"client": [
+			"ru.nosqd.nlm.client.NoLimitMinecartsModClient"
 		]
 	},
 	"mixins": [
-		"nlm.mixins.json"
+		"nlm.mixins.json",
+		{
+			"config": "nlm.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
