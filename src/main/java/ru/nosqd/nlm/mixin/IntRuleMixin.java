@@ -16,6 +16,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.function.BiConsumer;
 
+/**
+ * Mixin for IntRule to change maximum of maxMinecartSpeed gamerule
+ */
 @Mixin(GameRules.IntRule.class)
 public abstract class IntRuleMixin {
     @Shadow

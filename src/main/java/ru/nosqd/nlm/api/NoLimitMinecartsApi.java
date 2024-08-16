@@ -8,6 +8,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import ru.nosqd.nlm.NoLimitMinecartsMod;
 
+/**
+ * Api for using in other mods.
+ */
 public class NoLimitMinecartsApi {
     private static NoLimitMinecartsApi instance;
 
