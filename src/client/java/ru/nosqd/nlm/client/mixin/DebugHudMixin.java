@@ -1,3 +1,6 @@
+/**
+ * Mixin class for adding No Limit Minecarts information to the debug HUD.
+ */
 package ru.nosqd.nlm.client.mixin;
 
 import net.minecraft.client.MinecraftClient;
@@ -12,9 +15,14 @@ import ru.nosqd.nlm.api.NoLimitMinecartsApi;
 
 import java.util.List;
 
-
 @Mixin(DebugHud.class)
 public class DebugHudMixin {
+    /**
+     * Injects additional information into the debug HUD's left text.
+     * Adds No Limit Minecarts mod version and vehicle speed (if applicable).
+     *
+     * @param cir Callback info returnable containing the list of debug text lines.
+     */
     @Inject(method = "getLeftText", at = @At("RETURN"), cancellable = true)
     private void getLeftText(CallbackInfoReturnable<List<String>> cir) {
         var lines = cir.getReturnValue();

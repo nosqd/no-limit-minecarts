@@ -1,6 +1,8 @@
+/**
+ * Main mod class for No Limit Minecarts.
+ * This mod allows changing the maximum speed of minecarts and adds a speedometer.
+ */
 package ru.nosqd.nlm;
-
-import net.fabricmc.api.DedicatedServerModInitializer;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
@@ -9,11 +11,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.nosqd.nlm.api.NoLimitMinecartsApi;
 
-// TODO: maybe add when you set value greater than 1000 show message like "Your gamerules are boosted by no limit minecarts"
-// TODO: add notification when you join world without minecart feature flag like "this world can't be boosted by no limit minecarts"
-
 public class NoLimitMinecartsMod implements ModInitializer {
+	/**
+	 * Logger instance for the mod.
+	 */
 	public static final Logger LOGGER = LoggerFactory.getLogger("no-limit-minecarts");
+
+	/**
+	 * Version of the mod, loaded from the mod metadata.
+	 */
 	public static final String VERSION;
 
 	static {
@@ -21,6 +27,10 @@ public class NoLimitMinecartsMod implements ModInitializer {
 		VERSION = mod.getMetadata().getVersion().getFriendlyString();
 	}
 
+	/**
+	 * Initializes the mod.
+	 * This method is called by the Fabric loader when the game starts.
+	 */
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Starting No Limit Minecarts mod");

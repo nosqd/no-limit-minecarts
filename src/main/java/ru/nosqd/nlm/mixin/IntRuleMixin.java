@@ -1,3 +1,7 @@
+/**
+ * Mixin class for modifying the IntRule game rule to allow for higher maximum values.
+ * This is used to increase the maximum speed limit for minecarts.
+ */
 package ru.nosqd.nlm.mixin;
 
 import net.minecraft.resource.featuretoggle.FeatureFlags;
@@ -19,6 +23,16 @@ public abstract class IntRuleMixin {
         return null;
     }
 
+    /**
+     * Modifies the creation of IntRule to allow for a higher maximum value when the MINECART_IMPROVEMENTS feature is enabled.
+     *
+     * @param initialValue The initial value of the rule.
+     * @param min The minimum allowed value.
+     * @param max The maximum allowed value.
+     * @param featureSet The set of enabled features.
+     * @param biConsumer A BiConsumer for additional processing.
+     * @param cir Callback info returnable containing the created IntRule.
+     */
     @Inject(method = "create(IIILnet/minecraft/resource/featuretoggle/FeatureSet;Ljava/util/function/BiConsumer;)Lnet/minecraft/world/GameRules$Type;", at = @At("RETURN"), cancellable = true)
     private static void create(int initialValue, int min, int max, FeatureSet featureSet, BiConsumer<MinecraftServer, GameRules.IntRule> biConsumer, CallbackInfoReturnable<GameRules.Type<GameRules.IntRule>> cir) {
         // TODO: find better solution to this.
