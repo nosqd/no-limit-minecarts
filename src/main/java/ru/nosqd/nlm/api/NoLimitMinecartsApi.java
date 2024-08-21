@@ -6,6 +6,7 @@ package ru.nosqd.nlm.api;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.math.Vec3d;
 import ru.nosqd.nlm.NoLimitMinecartsMod;
 
 /**

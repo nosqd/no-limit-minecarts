@@ -4,12 +4,12 @@
 
 # No Limit Minecarts
 
-> 24w33a Fabric Mod that removes limits for gamerule `maxMinecartSpeed`
+> 24w34a Fabric Mod that removes limits for gamerule `maxMinecartSpeed`
 
 ## Downloads
 > Download from [github releases](https://github.com/nosqd/no-limit-minecarts/releases)
 > 
-> Download from [telegram channel](https://t.me/nosqdfiles/5)
+> Download from [modrinth](https://modrinth.com/mod/no-limit-minecarts)
 
 ## Usage
 ### Server
